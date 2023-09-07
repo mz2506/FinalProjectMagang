@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/vc_buku">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/img_buku"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/dalam_waktu_dekat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/judul_buku"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Dalam Watu Dekathhahahahahaahaahahha"
+        app:layout_constraintStart_toEndOf="@id/img_buku"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/penulis_buku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Penulis: Budiman Sulaeman "
+            app:layout_constraintStart_toEndOf="@+id/img_buku"
+            app:layout_constraintTop_toBottomOf="@id/judul_buku" />
+
+        <TextView
+            android:id="@+id/kategori_buku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kategori: Nonfiksi"
+            app:layout_constraintStart_toEndOf="@id/img_buku"
+            app:layout_constraintTop_toBottomOf="@id/penulis_buku"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/tahun_buku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tahun: 2020"
+            app:layout_constraintStart_toEndOf="@id/img_buku"
+            app:layout_constraintTop_toBottomOf="@id/kategori_buku"
+            android:layout_margin="10dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
